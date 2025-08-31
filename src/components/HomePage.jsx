@@ -3,7 +3,7 @@ import SkillCard from './SkillsCard';
 import { motion, useScroll, useSpring, useTransform, } from "motion/react"
 import html from "../assets/images/HTML5.svg"
 import css from "../assets/images/CSS3.svg"
-import js from "../assets/images/javaScript.svg"
+import js from "../assets/images/javascript.svg"
 import tailwind from "../assets/images/Tailwind_CSS.svg"
 import react from "../assets/images/React.svg"
 import node from "../assets/images/Nodejs.svg"
