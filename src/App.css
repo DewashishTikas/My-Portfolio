@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header-link:hover {
+  animation: downup cubic-bezier(0.28, 0.84, 0.42, 1) 1000ms;
+}
+
+.intro {
+  animation: textDown ease-in-out 1s ;
+}
+
+@keyframes textDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes downup {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
