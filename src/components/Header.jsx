@@ -16,10 +16,10 @@ export default function Header() {
         <nav>
           <RxHamburgerMenu className="text-3xl cursor-pointer md:hidden relative z-1" onClick={toggleMenu} />
           <ul className={`${isOpen ? ' bg-gray-950 opacity-100 translate-y-0' : '-translate-y-16 opacity-0 md:opacity-100'} absolute flex-col top-20 left-0 right-0 md:static md:translate-y-0 md:flex text-center pt-10 space-y-4 text-lg transition-all md:flex-row  md:space-x-8 duration-500 py-5`}>
-            <li className='header-link hover:text-amber-500 hover:drop-shadow-amber-500 hover:drop-shadow-xs'><NavLink to="#home" >Home</NavLink></li>
-            <li className='header-link' ><NavLink to="#projects" >Projects</NavLink></li>
-            <li className='header-link'><NavLink to="#about" >About</NavLink></li>
-            <li className='header-link'><NavLink to="#contact" >Contact</NavLink></li>
+            {[{ link: "#home", text: "Home" }, { link: "#projects", text: "Projects" }, { link: "#about", text: "About" }, { link: "#contact", text: "Contact" }].map(({ link, text }) => {
+              return <li className='header-link hover:text-amber-500 hover:drop-shadow-amber-500 hover:drop-shadow-xs'><NavLink to={`#${link}`} >{text}</NavLink></li>
+
+            })}
           </ul>
         </nav>
       </div>
