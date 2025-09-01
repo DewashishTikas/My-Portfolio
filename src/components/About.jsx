@@ -67,12 +67,12 @@ const AboutPage = () => {
           <p className="text-gray-400 mb-8">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="#contact"
             className="block max-w-40 mx-auto bg-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:scale-115 hover:bg-white hover:text-cyan-500 transition-all duration-300"
           >
             <div>Contact Me</div>
-          </Link>
+          </a>
         </motion.div>
 
       </div>
