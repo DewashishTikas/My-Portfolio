@@ -9,7 +9,7 @@ body {
 }
 
 .header-link:hover {
-  animation: downup cubic-bezier(0.28, 0.84, 0.42, 1) 1000ms;
+  animation: downup cubic-bezier(0.28, 0.84, 0.42, 1) 500ms;
 }
 
 .intro {

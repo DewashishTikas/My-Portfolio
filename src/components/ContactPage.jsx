@@ -2,7 +2,10 @@ import { motion } from 'motion/react';
 import InputComponent from './InputComponent';
 import { useState, useTransition } from 'react';
 import contact from '../assets/images/contact.png';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import logo from '../assets/images/logo.png';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +56,6 @@ const ContactPage = () => {
       })
     })
     setError(errorsObject)
-    console.log(e.target);
     if (Object.keys(errorsObject).length !== 0) {
       return
     }
@@ -83,9 +85,8 @@ const ContactPage = () => {
       }
     });
   }
-  console.log(fail);
   return (
-    <section id='contact' className="bg-gradient-to-t from-gray-800 to-gray-950 text-white p-8">
+    <section id='contact' className="bg-gradient-to-t from-black via-gray-800  to-gray-950 text-white p-8">
       <div className="container mx-auto">
         <motion.h1 initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -129,6 +130,22 @@ const ContactPage = () => {
             </form>
           </motion.div>
         </div>
+      </div>
+      <p className='text-center text-gray-400 text-sm mt-5'>Dewashish Tikas © 2025</p>
+
+      <div className="flex items-center cursor-pointer w-fit mx-auto" >
+        <img src={logo} alt="logo" className="w-25 hover:drop-shadow-amber-500 hover:drop-shadow-xl" />
+      </div>
+      <div className="flex items-center justify-center gap-4 mt-4">
+        <a href="mailto:tikasdewashish2208@gmail.com">
+          <SiGmail className="text-3xl text-gray-400 hover:text-cyan-400 transition-colors duration-300" />
+        </a>
+        <a href="https://www.linkedin.com/in/dewashish-tikas-4131b0323/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="text-3xl text-gray-400 hover:text-cyan-400 transition-colors duration-300" />
+        </a>
+        <a href="https://github.com/DewashishTikas" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="text-3xl text-gray-400 hover:text-cyan-400 transition-colors duration-300" />
+        </a>
       </div>
     </section>
   );

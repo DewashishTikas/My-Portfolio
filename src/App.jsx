@@ -4,15 +4,15 @@ import Header from './components/Header'
 import HomePage from './components/HomePage'
 import AboutPage from './components/About'
 import ContactPage from './components/ContactPage'
+import ProjectsPage from './components/ProjectsPage'
 
 function App() {
 
   return (
     <>
-      <section id="home">
-        <Header />
-        <HomePage />
-      </section>
+      <Header />
+      <HomePage />
+      <ProjectsPage />
       <AboutPage />
       <ContactPage />
     </>

@@ -59,7 +59,7 @@ export default function HomePage() {
 
   function giveOutputRange(){
     if (window.innerWidth > 768) {
-      return ["0","-140%"];
+      return ["10%","-140%"];
     }
     else {
       return ["0%","-290%"];

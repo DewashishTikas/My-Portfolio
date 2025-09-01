@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const AboutPage = () => {
   return (
-    <section id="about" className="bg-gradient-to-b from-black to-gray-950 text-white p-8">
+    <section id="about" className="bg-gradient-to-t from-black to-gray-950 text-white p-8">
       <div className="container mx-auto">
         <motion.h1
           className="text-5xl font-bold text-center mb-12"
