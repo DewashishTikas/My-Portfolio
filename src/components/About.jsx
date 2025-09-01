@@ -1,10 +1,9 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
-// import { FaCode } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
-    <section className="bg-gradient-to-b from-black to-gray-950 text-white p-8">
+    <section id="about" className="bg-gradient-to-b from-black to-gray-950 text-white p-8">
       <div className="container mx-auto">
         <motion.h1
           className="text-5xl font-bold text-center mb-12"
