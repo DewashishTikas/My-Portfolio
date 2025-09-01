@@ -48,18 +48,24 @@ export default function HomePage() {
 
   ]
   const myRef = useRef()
-  console.log(window.innerWidth);
-  const { scrollYProgress } = useScroll({ target: myRef, offset: ["0.5 1 ","1 0"] })
+  function giveOffsetInitial(){
+    if (window.innerWidth > 768) {
+      return "0.4 1 ";
+    }
+    else {
+      return "0.65 1 ";
+    }
+  }  const { scrollYProgress } = useScroll({ target: myRef, offset: [giveOffsetInitial(),"1 0"] })
 
   function giveOutputRange(){
     if (window.innerWidth > 768) {
-      return "-140%";
+      return ["0","-140%"];
     }
     else {
-      return "-280%";
+      return ["0%","-290%"];
     }
   }
-  const rawX = useTransform(scrollYProgress, [0, 0.6], ["10%", giveOutputRange()])
+  const rawX = useTransform(scrollYProgress, [0, 0.6], giveOutputRange())
   const x = useSpring(rawX, {
     stiffness: 100,
     damping: 20,
@@ -78,7 +84,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 mt-28  text-center  h-[100vh]  text-white " ref={myRef}>
           <div className="sticky  top-50 overflow-hidden"><h1 className="md:text-4xl text-xl font-bold ">Tech Skills</h1>
-            <motion.div className="grid grid-flow-col md:auto-cols-[calc(80%/3)] auto-cols-[calc(80%/2)] mt-5 gap-10 px-2 md:px-5" style={{ x }}>
+            <motion.div className="px-5 grid grid-flow-col md:auto-cols-[calc(80%/3)] auto-cols-[calc(80%/2)] mt-5 gap-10" style={{ x }}>
               {
                 techSkill.map((skill, index) => (
                   <SkillCard key={index} image={skill.image} text={skill.text} />
