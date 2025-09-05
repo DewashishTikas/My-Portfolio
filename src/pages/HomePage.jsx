@@ -1,5 +1,5 @@
-import Earth from './Background';
-import SkillCard from './SkillsCard';
+import Background from '../components/Background';
+import SkillCard from '../components/SkillsCard';
 import { motion, useScroll, useSpring, useTransform, } from "motion/react"
 import html from "../assets/images/HTML5.svg"
 import css from "../assets/images/CSS3.svg"
@@ -74,7 +74,7 @@ export default function HomePage() {
     <>
       <div className="relative w-full " style={{ minHeight: 'calc(100vh - 92px)' }}>
         <div className="absolute inset-0">
-          <Earth />
+          <Background />
         </div>
 
         <div className="intro relative z-10 top-24  text-center  h-full  text-white">

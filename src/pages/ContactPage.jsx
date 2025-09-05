@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import InputComponent from './InputComponent';
+import InputComponent from '../components/InputComponent';
 import { useState, useTransition } from 'react';
 import contact from '../assets/images/contact.png';
 import emailjs from '@emailjs/browser';

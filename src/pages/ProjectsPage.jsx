@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectLeft from './ProjectLeft'
+import ProjectLeft from '../components/ProjectLeft'
 import project1 from '../assets/images/WhereIntheWorld.svg'
 export default function ProjectsPage() {
   return (

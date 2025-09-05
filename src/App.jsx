@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
-import HomePage from './components/HomePage'
-import AboutPage from './components/AboutPage'
-import ContactPage from './components/ContactPage'
-import ProjectsPage from './components/ProjectsPage'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import ProjectsPage from './pages/ProjectsPage'
 
 function App() {
 
