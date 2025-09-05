@@ -11,8 +11,8 @@ export default function ProjectLeft({ image, name,link, techSkills, description 
       <div className="md:w-1/2 w-full self-center">
         <h3 className="text-3xl md:text-4xl font-bold">{name}</h3>
         <p className="text-md md:text-lg mb-2">{description}</p>
-        <p className="space-x-2">{techSkills.map((skill) => {
-          return <span className='bg-gray-700 px-2 py-1 rounded-md ' key={skill}>{skill}</span>
+        <p className="space-x-2 space-y-2">{techSkills.map((skill) => {
+          return <span className='bg-gray-700 px-2 py-1 rounded-md inline-flex' key={skill}>{skill}</span>
         })}</p>
       </div>
     </div>
