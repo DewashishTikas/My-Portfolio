@@ -86,17 +86,17 @@ const ContactPage = () => {
     });
   }
   return (
-    <section id='contact' className="bg-gradient-to-t from-black via-gray-800  to-gray-950 text-white p-8">
+    <section id='contact' className="bg-gradient-to-b from-black via-gray-800  to-gray-950 text-white p-8">
       <div className="container mx-auto">
         <motion.h1 initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.2 }} className="text-5xl font-bold text-center mb-12">Contact Me</motion.h1>
         <div className='flex flex-col md:flex-row items-center gap-20'>
           <motion.div className='md:w-1/2 w-3/4'
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: 0.2 }}>
             <img src={contact} alt="photo" className='w-full ' />
           </motion.div>

@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function InputComponent({ id, name, type, css, error, value, setValue }) {
     return (

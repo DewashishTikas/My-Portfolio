@@ -9,7 +9,7 @@ const AboutPage = () => {
           className="text-5xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5 }}
         >
           About Me
@@ -20,7 +20,7 @@ const AboutPage = () => {
             className="bg-gray-800 p-6 rounded-lg"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-2xl font-semibold mb-2">Who I Am</h2>
@@ -33,7 +33,7 @@ const AboutPage = () => {
             className="bg-gray-800 p-6 rounded-lg"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <h2 className="text-2xl font-semibold mb-2">What I Do</h2>
